@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "gender", name: "Gender" },
       { id: "address", name: "Address" },
       { id: "email", name: "Email", type: "email" },
-      { id: "phone", name: "Phone", pattern: /^[0-9]{10}$/ },
+      { id: "phone", name: "Phone", pattern: /^[0-9]{12}$/ },
       { id: "education", name: "Education" },
       { id: "photo", name: "Photo" },
       { id: "sign", name: "Signature" }
