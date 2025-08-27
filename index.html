@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ECET Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>ECET Registration Form</h2>
+  <form id="ecetForm">
+    
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label>First Name: <input type="text" id="fname" name="fname" placeholder="Enter first name" required></label><br>
+      <label>Last Name: <input type="text" id="lname" name="lname" placeholder="Enter last name" required></label><br>
+      <label>Father's Name: <input type="text" id="father" name="father" placeholder="Enter father's name" required></label><br>
+      <label>Mother's Name: <input type="text" id="mother" name="mother" placeholder="Enter mother's name" required></label><br>
+      <label>DOB: <input type="date" id="dob" name="dob" required></label><br>
+      <label>Gender:
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label><br>
+      <label>Address: <textarea id="address" name="address" placeholder="Enter your address" required></textarea></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Details</legend>
+      <label>Email: <input type="email" id="email" name="email" placeholder="example@gmail.com" required></label><br>
+      <label>Phone: <input type="text" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Education Details</legend>
+      <label>Education:
+        <select id="education" name="education" required>
+          <option value="">Select</option>
+          <option value="Diploma">Diploma</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="M.Tech">M.Tech</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Uploads</legend>
+      <label>Photo: <input type="file" id="photo" name="photo" accept="image/*" required></label><br>
+      <label>Signature: <input type="file" id="sign" name="sign" accept="image/*" required></label>
+    </fieldset>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
